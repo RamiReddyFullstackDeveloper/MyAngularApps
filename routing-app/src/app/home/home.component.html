@@ -1,0 +1,12 @@
+<div>
+    <h2>Book Details</h2>
+
+    <ul (ngClass)="'home'">
+        <li *ngFor='let book of books; let i=index' [attr.data-index]='i'>
+                {{i+1}}   Id: {{book.id}}, Name : {{book.name}} |
+        <!-- <a [routerLink]="['/view-detail, book.id]">View Details</a>-->
+        <a routerLink="/view-detail" [queryParams] =" {id:book.id}">View Details</a>
+        </li>
+    </ul>
+    <a href='javascript:void(0)' (click)='test()'>hi test()</a>
+</div>

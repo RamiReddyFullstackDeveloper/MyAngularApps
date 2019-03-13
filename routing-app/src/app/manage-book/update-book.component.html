@@ -1,0 +1,25 @@
+<div>
+<h2>Update Book</h2>
+<div>
+  <label> Id :</label> {{book.id}}
+</div>
+<div>
+    <label> Name :</label>
+    <input type="text" name="name" [(ngModel)] = 'book.name'/>  
+</div>
+
+<div>
+    <label> Price :</label>
+    <input type="text" name="price" [(ngModel)] = 'book.price'/>  
+</div>
+
+<div>
+    <label> Description :</label>
+    <input type="text" name="description" [(ngModel)] = 'book.description'/>  
+</div>
+
+<div>
+    <button (click)="goBack()">Go Back</button>
+    <button (click)="updateBook()">Update</button>
+</div>
+</div>

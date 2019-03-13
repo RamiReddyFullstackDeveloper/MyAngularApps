@@ -1,0 +1,14 @@
+<div>
+  <h2>Manage Book</h2>
+
+  <div>
+      <span *ngFor='let book of books; let i=index' [attr.data.index]="i">
+       <div>
+        Id : {{book.id}}, Name = {{book.name}} 
+        <button (click)='updateBook(book.id)'>Update</button>
+        <button (click)='deleteBook(book.id)'>Delete</button>
+       </div>
+      </span>
+  </div>
+
+</div>
